@@ -9,6 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
+    user-select: none;
 }
 a{
     display: inline-block;
@@ -30,10 +31,18 @@ nav{
 nav .navLogo img{
     height: 50px;
 }
+nav .navLogo img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 nav .navLinksCont .navLink{
     font-size: 23px;
     font-weight: 700;
+    color: #448AFF;
+}
+nav .navLinksCont .navLink:hover{
+    opacity: 0.8;
 }
 /*  */
 
@@ -107,8 +116,13 @@ main .mainJam img{
     width: 110px;
     text-align: center;
 
-    border: 1px solid black;
+    box-shadow: 2px 2px 5px 2px rgb(238, 209, 197);
     border-radius: 10px;
+}
+#topics .card:hover{
+   scale: 1.1 1.1;
+   box-shadow: 2px 2px 8px 2px rgb(223, 170, 148);
+
 }
 #topics .cardTitle{
     font-weight: 700;
@@ -125,7 +139,7 @@ main .mainJam img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 50px;
 }
 
 .blogs{
@@ -133,8 +147,13 @@ main .mainJam img{
     width: 60vw;
 
     border-radius: 20px;
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px 2px rgb(230, 220, 216), -5px -5px 10px 2px rgb(230, 220, 216);
     background-color: #f7faff;
+}
+.blogs:hover{
+    box-shadow: 5px 5px 10px 2px rgb(205, 196, 193), -5px -5px 10px 2px rgb(205, 196, 193);
+    cursor: pointer;
+    scale: 1.01 1.01;
 }
 .blogs .blogsTitle{
     width: auto;
@@ -189,7 +208,8 @@ footer .right{
     width: 35%;
 }
 footer .left h2{
-    color: #448AFF;
+    color: rgb(74, 72, 72);
+
 }
 footer .left h5{
     color: rgb(74, 72, 72);
