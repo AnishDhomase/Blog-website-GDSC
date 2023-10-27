@@ -6,31 +6,32 @@
         <title>Blogs | Demo</title>
         <link rel="shortcut icon" href="logo.png">
         <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         
         <!-- Navbar -->
         <nav>
             <div class="navLogo">
-                <img src="logo.png" alt="">
+                <img src="logo.png" alt="" data-aos="fade-down" data-aos-duration="700">
             </div>
 
             <div class="navLinksCont">
-                <a href="#topics" class="navLink">Blogs</a>
+                <a href="#topics" class="navLink" data-aos="fade-down" data-aos-duration="700">Blogs</a>
             </div>
         </nav>
         <!--  -->
 
         <!-- Head Section -->
         <main>
-            <div class="mainleft">
+            <div class="mainleft" data-aos="zoom-in-up" data-aos-duration="2000">
                 <h1>Tech Insight Zone</h1>
                 <h4>Explore the Latest Trends and Innovations in Tech</h4>
                 <h3>Let's connect !</h3>
             </div>
 
-            <div class="mainJam"> 
-                <img src="jamming.png" alt="">
+            <div class="mainJam" data-aos="zoom-in-up" data-aos-duration="2000"> 
+                <img src="jamming.png" alt="" >
             </div>
         </main>
         <!--  -->
@@ -38,10 +39,10 @@
         <!-- Topics Section -->
         <section id="topics">
             <div class="topicTitle">
-                <h1>Blogs Category</h1>
+                <h1 data-aos="zoom-out" data-aos-duration="700">Blogs Category</h1>
             </div>
             <div class="cardsec">
-                <a class="card" href="#web">
+                <a class="card" href="#web" data-aos="flip-left">
                     <div class="image">
                         <img src="webdev.png" alt="">
                     </div>
@@ -49,7 +50,7 @@
                        Web Dev
                     </div>
                 </a>
-                <a class="card" href="#web3">
+                <a class="card" href="#web3" data-aos="flip-left">
                     <div class="image">
                         <img src="web3.png" alt="">
                     </div>
@@ -57,7 +58,7 @@
                        Web 3.0
                     </div>
                 </a>
-                <a class="card" href="#cloud">
+                <a class="card" href="#cloud" data-aos="flip-left">
                     <div class="image">
                         <img src="cloud.png" alt="">
                     </div>
@@ -65,7 +66,7 @@
                        Cloud
                     </div>
                 </a>
-                <a class="card" href="#ai">
+                <a class="card" href="#ai" data-aos="flip-left">
                     <div class="image">
                         <img src="ai.png" alt="">
                     </div>
@@ -73,7 +74,7 @@
                        AI | ML
                     </div>
                 </a>
-                <a class="card" href="#ds">
+                <a class="card" href="#ds" data-aos="flip-left">
                     <div class="image">
                         <img src="ds.png" alt="">
                     </div>
@@ -81,7 +82,7 @@
                        Data Sci
                     </div>
                 </a>
-                <a class="card" href="#app">
+                <a class="card" href="#app" data-aos="flip-left">
                     <div class="image">
                         <img src="app.png" alt="">
                     </div>
@@ -90,7 +91,7 @@
                     </div>
                 </a>
             </div>
-            <div class="topicPara">
+            <div class="topicPara" data-aos="zoom-out" data-aos-duration="1200">
                 Our mission is to provide you with insights, analyses, and hands-on experiences that bridge the gap between everyday users and tech enthusiasts. From cutting-edge software to the inner workings of hardware, we delve deep into the heart of the digital revolution.
             </div>
         </section>
@@ -98,7 +99,7 @@
 
         <!-- Blogs -->
         <section id="blogsSec">
-            <section class="blogs" id="web">
+            <section class="blogs" id="web" data-aos="fade-right">
                 <div class="blogsTitle">Web Dev</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs" id="web3">
+            <section class="blogs" id="web3" data-aos="fade-left">
                 <div class="blogsTitle">Web 3.0</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -126,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs" id="cloud">
+            <section class="blogs" id="cloud" data-aos="fade-right">
                 <div class="blogsTitle">Cloud</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -140,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs" id="ai">
+            <section class="blogs" id="ai" data-aos="fade-left">
                 <div class="blogsTitle">AI | ML</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs" id="ds">
+            <section class="blogs" id="ds" data-aos="fade-right">
                 <div class="blogsTitle">Data Sci</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -168,7 +169,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blogs" id="app">
+            <section class="blogs" id="app" data-aos="fade-left">
                 <div class="blogsTitle">App Dev</div>
                 <div class="blogsContent">
                     <div class="left">
@@ -235,5 +236,22 @@
 
         <!-- Main Script -->
         <script src="script.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 200, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+        </script>
+
     </body>
 </html>
