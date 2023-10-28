@@ -127,7 +127,7 @@ main .mainJam img{
 #topics .topicPara{
     margin-top: 20px;
     width: 60vw;
-    text-align: center;
+    text-align: justify;
 
     color: rgba(255, 255, 255, 0.705);
 }
