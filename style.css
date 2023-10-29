@@ -283,7 +283,13 @@ footer .right .row a{
 }
 /*  */
 
-
+@media screen and (min-width : 1500px){
+    nav{
+        justify-content: center;
+        gap: 1000px;
+    
+    }
+}
 @media screen and (max-width : 1150px){
     /* MAIN */
     main .mainleft h1{
