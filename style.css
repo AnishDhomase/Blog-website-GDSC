@@ -26,12 +26,14 @@
 html{
     scroll-behavior: smooth;
     user-select: none;
-    background-image: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(118, 74, 146));
+    background-color: #0e0121;
 }
 body{
     margin: 0 auto;
     width: 100% !important;
-    max-width: 1500px !important;
+    /* max-width: 1500px !important; */
+    background-image: linear-gradient(to bottom right, rgb(1, 1, 62), rgb(118, 74, 146));
+
 }
 a{
     display: inline-block;
@@ -127,6 +129,7 @@ main .mainJam img{
 #topics .topicPara{
     margin-top: 20px;
     width: 60vw;
+    max-width: 650px;
     text-align: justify;
 
     color: rgba(255, 255, 255, 0.705);
